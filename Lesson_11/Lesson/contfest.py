@@ -11,4 +11,4 @@ from selenium.webdriver.common.keys import Keys
 @pytest.fixture
 def driver(self):
     self.browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-    return self.browser
+    return self.browsers
