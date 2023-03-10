@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Mar 10 17:10:41 MSK 2023","Fri Mar 10 17:10:44 MSK 2023","3129","","test_exercise_db__api ","","","","Создание нового сотрудника",""
+"passed","Fri Mar 10 17:10:45 MSK 2023","Fri Mar 10 17:10:47 MSK 2023","1994","","test_exercise_db__api ","","","","Изменение информации о сотруднике",""
+"broken","Fri Mar 10 17:10:44 MSK 2023","Fri Mar 10 17:10:45 MSK 2023","1135","","test_exercise_db__api ","","","","получение информации по id сотрдника",""
+"passed","Fri Mar 10 17:10:36 MSK 2023","Fri Mar 10 17:10:41 MSK 2023","5123","","test_exercise_db__api ","","","","Получаем список сотрудников в новой компании",""
