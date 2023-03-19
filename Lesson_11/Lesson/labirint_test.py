@@ -15,7 +15,7 @@ cookie = {
 def test_cart_counter(driver):
     
     #Перейти на сайт лабиринт
-    self.driver.get("https://www.labirint.ru/")
+    driver.get("https://www.labirint.ru/")
     driver.implicitly_wait(5)
     driver.maximize_window()
     driver.add_cookie(cookie)

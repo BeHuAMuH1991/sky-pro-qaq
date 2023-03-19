@@ -18,12 +18,12 @@ class CompanyTable:
         self.__db = create_engine(connection_string)
 
     @allure.step("Удаляем компанию")
-    def delete(self, id : int):
+    def delete(self, id : int) -> None:
         """Удаляем компанию"""
         self.__db.execute(self.__scripts["delete by id"], id_to_delete = id)
 
     @allure.step("Создаем компанию")
-    def create(self, name : str, descr : str):
+    def create(self, name : str, descr : str) -> None:
         """Создаем компанию"""
         self.__db.execute(self.__scripts["insert new"], new_name = name, new_descr = descr)
         
