@@ -8,10 +8,11 @@ from pages.Cart import Cart
 from pages.Data_entry import Entry
 from pages.Checkout_overview import Checkout
 
-browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+
 
 @allure.title("Покупка вещей")
 def test_buy():
+    browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
     authorization = Authorization(browser)
     authorization.user_name("standard_user")
     authorization.password("secret_sauce")

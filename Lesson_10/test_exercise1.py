@@ -10,10 +10,11 @@ from time import sleep
 
 
 
-driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+
 
 @allure.title("Проверка цвета в в полях")
 def test_color():
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
     pole = Pole(driver)
     pole.first_name("Иван")
@@ -38,7 +39,7 @@ def test_color():
     job = color.color_job_position()
     phone = color.color_phone_number()
 
-    sleep(10)
+    driver.quit()
 
 
     assert zip == "rgba(132, 32, 41, 1)"

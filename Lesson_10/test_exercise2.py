@@ -9,10 +9,11 @@ import allure
 
 
 
-browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+
 
 @allure.title("Работа калькулятора")
 def test_calculator():
+    browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
     calculator  = Calculator(browser)
     calculator.waiting_time("4")
     calculator.seven()
